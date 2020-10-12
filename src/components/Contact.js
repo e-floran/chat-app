@@ -5,7 +5,7 @@ import "./Contact.css";
 function Contact(props){
     return (
         <article className="Contact">
-            <img className="avatar" src={props.image} alt={props.name}></img>
+            <img className="avatar" src={props.avatar} alt={props.name}></img>
             <div>
                 <h4 className="name">{props.name}</h4>
                 <div className="status">
@@ -17,7 +17,7 @@ function Contact(props){
     )
 }
 Contact.propTypes = {
-    image: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     online: PropTypes.bool.isRequired,
 };
