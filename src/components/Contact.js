@@ -1,14 +1,6 @@
 import React from 'react';
 import "./Contact.css";
 
-let IsOnline = true;
-const StatusOnline = () =>{
-    return IsOnline === true ? "status-online" : "status-offline" ;
-}
-const StatusText = () =>{
-    return IsOnline === true ? "Online" : "Offline" ;
-}
-
 function Contact(){
     return (
         <article className="Contact">
@@ -16,8 +8,8 @@ function Contact(){
             <div>
                 <h4 className="name">Marcus Freeman</h4>
                 <div className="status">
-                    <div className={StatusOnline}></div>
-                    <p className="status-text">{StatusText}</p>
+                    <div className="status-online"></div>
+                    <p className="status-text">Online</p>
                 </div>
             </div>
         </article>
